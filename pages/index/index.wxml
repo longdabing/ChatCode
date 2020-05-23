@@ -20,6 +20,6 @@
 	<scroll-comp></scroll-comp>
 
 	<!-- <button type="primary" bindtap="inlogin">调用子组件方法</button> -->
-	<view><button type="primary" bindtap="priviewImage">图片预览</button></view>
+	<!-- <view><button type="primary" bindtap="priviewImage">图片预览</button></view> -->
 	<!-- <observe-comp></observe-comp> -->
 </view>
