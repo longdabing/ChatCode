@@ -1,0 +1,2 @@
+/* component/beveragecomp/bever-comp.wxss */
+@import"../../template/list-temp.wxss"

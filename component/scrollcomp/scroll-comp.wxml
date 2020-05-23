@@ -1,0 +1,7 @@
+ <view class="comview">
+   <scroll-view class="scroll" scroll-x="true">
+   <block wx:for="{{imgscroll}}" wx:key="scrolkey">
+   <image src="{{item}}"></image>
+   </block>
+   </scroll-view>
+ </view>

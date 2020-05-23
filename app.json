@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/person/person",
+    "pages/fgood/fgood",
+    "pages/fgclass/fgclass",
+    "pages/fgclass/meateclass/meateclass",
+    "pages/fgclass/seaclass/seaclass",
+    "pages/fgclass/purecom/purecom"
+  ],
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#008888",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/tab-homeno.png",
+        "selectedIconPath": "/images/tab-home.png"
+      },
+      {
+        "pagePath": "pages/fgclass/fgclass",
+        "text": "分类",
+        "iconPath": "/images/tab-classno.png",
+        "selectedIconPath": "/images/tab-class.png"
+      },
+      {
+        "pagePath": "pages/fgood/fgood",
+        "text": "购物车",
+        "iconPath": "/images/tab-busno.png",
+        "selectedIconPath": "/images/tab-bus.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "设置",
+        "iconPath": "/images/tab-settingno.png",
+        "selectedIconPath": "/images/tab-setting.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

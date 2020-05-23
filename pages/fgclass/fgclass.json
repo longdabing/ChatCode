@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "list-comp":"../../component/listcomp/list-comp",
+    "meat-comp":"../../component/meatcomp/meat-comp",
+    "sea-comp":"../../component/seacomp/sea-comp",
+    "veg-comp":"../../component/vegetablecomp/veg-comp",
+    "fruit-comp":"../../component/fruitcomp/fruit-comp",
+    "bever-comp":"../../component/beveragecomp/bever-comp"
+  },
+  "navigationBarBackgroundColor": "#99CC33",
+  "navigationBarTitleText": "物品分类"
+}

@@ -1,0 +1,2 @@
+/* component/vegetablecomp/veg-comp.wxss */
+@import"../../template/list-temp.wxss"

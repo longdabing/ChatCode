@@ -1,0 +1,71 @@
+/* pages/fgclass/fgclass.wxss */
+.videoss {
+  width: 100%;
+}
+
+.coverimg {
+  width: 200rpx;
+  height: 100rpx;
+}
+
+.scrolly {
+  display: flex;
+  flex-flow: column;
+  height: 500rpx;
+}
+
+.itemview {
+  height: 40rpx;
+  width: 140rpx;
+  margin-top: 30rpx;
+  margin-left: 0rpx;
+  background-color: #99CC33;
+}
+
+/* .box{
+  display: flex;
+}
+.scrolly text{
+  margin-left: 10rpx;
+} */
+
+/* .rightbox{
+  height: 500rpx;
+  width: 100%;
+  background-color:#ddd;
+} */
+@import '../../component/listcomp/list-comp.wxss';
+/**去除scroll-view滚动条**/
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.box .active{
+  background-color: #77ac98;
+}
+
+.left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 145rpx;
+  background:#feeeed;/* #F6F6F6; */
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.right {
+  margin-left: 145rpx;
+  height: 100%;
+  overflow: hidden;
+  width: auto;
+  background: #fff;
+}

@@ -1,0 +1,2 @@
+/* pages/fgclass/seaclass/seaclass.wxss */
+@import "../../../template/list-temp.wxss"

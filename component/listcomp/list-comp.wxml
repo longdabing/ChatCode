@@ -1,0 +1,11 @@
+<view class="container">
+	<view class="box">
+		<block wx:for="{{classimglist}}" wx:for-item="item" wx:key="listkey">
+			<view class="item">
+				<image src="{{item.imgsrc}}"></image>
+				<text class="icontxt">{{item.classname}}</text>
+			</view>
+		</block>
+	</view>
+</view>
+<scroll-comp></scroll-comp>

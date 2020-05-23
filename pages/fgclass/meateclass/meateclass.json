@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "list-comp":"/component/listcomp/list-comp"
+  },
+  "navigationBarBackgroundColor": "#99CC33",
+  "navigationBarTitleText": "肉类"
+}

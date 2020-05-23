@@ -1,0 +1,13 @@
+.searchbox {
+  display: flex;
+  justify-content: space-around;
+  /* background-color: #bed742; */
+  padding: 10rpx 10rpx;
+}
+
+.search {
+  text-align: center;
+  background-color: #fff;
+  height: 40rpx;
+  border-radius: 20rpx;
+}

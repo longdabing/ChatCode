@@ -1,0 +1,2 @@
+/* component/seacomp/sea-comp.wxss */
+@import"../../template/list-temp.wxss"

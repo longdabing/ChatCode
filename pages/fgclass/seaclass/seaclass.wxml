@@ -1,0 +1,12 @@
+<view>海鲜页面，列表是模板生成的</view>
+<view>现在是北京时间：{{nowtime}}</view>
+<import src="../../../template/list-temp.wxml" />
+<view class="container">
+	<view class="box">
+		<block wx:for="{{classimglist}}" wx:for-item="item" wx:key="listkey">
+			<template is="listtemp" data="{{item}}">
+
+			</template>
+		</block>
+	</view>
+</view>

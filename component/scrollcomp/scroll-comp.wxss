@@ -1,0 +1,9 @@
+/* component/scrollcomp/scroll-comp.wxss */
+.comview{
+  margin-top: 15rpx;
+}
+.scroll{
+  display: flex;
+  white-space: nowrap;
+  height: 300rpx;
+}

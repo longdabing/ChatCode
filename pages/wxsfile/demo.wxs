@@ -1,0 +1,10 @@
+var demo222 = require("./demo2.wxs");
+
+var showtxt= demo222.sayName();
+var addnum = function(value1,value2){
+  return value1+value2;
+}
+module.exports = {
+  showtxt:showtxt,
+  addnum:addnum
+}

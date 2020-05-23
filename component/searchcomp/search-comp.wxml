@@ -1,0 +1,6 @@
+<!--component/searchcomp/search-comp.wxml-->
+<view class="searchbox search-style">
+	<icon type="search"></icon>
+	<input bindconfirm="bindSearch" class="search" placeholder="{{searchcompdata}}"></input>
+	<view>登录</view>
+</view>

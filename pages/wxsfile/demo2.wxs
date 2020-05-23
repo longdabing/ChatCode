@@ -1,0 +1,6 @@
+var sayName = function(){
+return "我是只说代码的大饼 222";
+}
+module.exports = {
+  sayName:sayName
+}

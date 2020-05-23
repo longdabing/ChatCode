@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "scroll-comp":"../../component/scrollcomp/scroll-comp",
+    "search-comp":"../../component/searchcomp/search-comp",
+    "observe-comp":"../../component/observecomp/observe-comp"
+  },
+  "navigationBarBackgroundColor": "#99CC33",
+  "navigationBarTitleText": "首页"
+}

@@ -1,0 +1,21 @@
+/* pages/person/person.wxss */
+.flex-box{
+  display: flex;
+  flex-flow: column;
+}
+.flex-box .txt{
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+
+.splitline{
+  width: 92%;
+  height: 2rpx;
+  margin-left: 4%;
+  margin-right: 4%;
+  background-color: wheat;
+}
+.btn{
+  margin-top: 10rpx;
+  width: 100%;
+}

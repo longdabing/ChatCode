@@ -1,0 +1,31 @@
+<!--pages/fgclass/fgclass.wxml-->
+<!-- <video class="videoss" src="http://localhost/webapp/HD釜山行.mp4" controls danmu-btn="true" show-center-play-btn="true" initial-time="100">
+	<cover-view>
+		<cover-image class="coverimg" src="{{imgonesrc}}"></cover-image>
+	</cover-view>
+</video> -->
+<!-- <view>
+	<button type="primary" bindtap="bindchangeimg">修改左上角图片</button>
+</view> -->
+<view class="box">
+	<!-- <view class="scrollbox"> -->
+	<scroll-view scroll-y="true" class="left">
+		<block wx:for="{{txtclasslist}}" wx:for-item="item" wx:key="index">
+			<view class="itemview {{currnavindex==index?'active':''}}" data-curritem="{{index}}" catchtap="leftcatchtap">
+				<!-- <navigator url="{{item.url}}">{{item.txt}}</navigator> -->
+				<view>{{item.txt}}</view>
+
+			</view>
+		</block>
+	</scroll-view>
+	<!-- </view> -->
+	<!-- <view class="rightbox"> -->
+	<scroll-view scroll-y="true" class="right">
+		<list-comp wx:if="{{currnavindex==0? true:false}}"></list-comp>
+		<meat-comp wx:if="{{currnavindex==1? true:false}}"></meat-comp>
+		<sea-comp wx:if="{{currnavindex==2? true:false}}"></sea-comp>
+		<veg-comp wx:if="{{currnavindex==3? true:false}}"></veg-comp>
+		<fruit-comp wx:if="{{currnavindex==4? true:false}}"></fruit-comp>
+		<bever-comp wx:if="{{currnavindex==5? true:false}}"></bever-comp>
+	</scroll-view>
+</view>

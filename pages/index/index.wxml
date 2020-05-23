@@ -1,0 +1,25 @@
+<import src="../../template/list-temp.wxml" />
+<search-comp bindsearchtxt="searchtxt" searchcompdata="{{indexname}}" search-style="searchstyle" id="searchid"></search-comp>
+<!-- <search-comp bind:searchtxt="searchtxt"></search-comp> -->
+<swiper class="swiper" autoplay="true" indicator-dots="true" indicator-color="red" interval="2000" circular="true">
+	<block wx:for="{{imglist}}" wx:key="swiperkey">
+		<swiper-item>
+			<image class="itemimg" src="{{item}}"></image>
+		</swiper-item>
+	</block>
+</swiper>
+<view class="container">
+	<view class="box">
+		<block wx:for="{{classimglist}}" wx:for-item="item" wx:key="listkey">
+			<template is="listtemp" data="{{item}}">
+
+			</template>
+		</block>
+	</view>
+
+	<scroll-comp></scroll-comp>
+
+	<!-- <button type="primary" bindtap="inlogin">调用子组件方法</button> -->
+	<view><button type="primary" bindtap="priviewImage">图片预览</button></view>
+	<!-- <observe-comp></observe-comp> -->
+</view>

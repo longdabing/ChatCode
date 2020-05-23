@@ -1,0 +1,40 @@
+.swiper{
+  height: 300rpx;
+}
+.itemimg{
+  width: 100%;
+  height: 100%;
+}
+.view{
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  text-align: center;
+}
+
+.container{
+  margin-top: 10rpx;
+}
+.container .box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.searchstyle{
+  background-color:  #bed742;
+  color:blue;
+}
+/**引入另外的.wxss样式文件 2020.5.14**/
+@import "../../template/list-temp.wxss"
+/**原来的样式，2020.5.14 longdb**/
+/* .box .item{
+  text-align: center;
+  margin-top: 20rpx;
+}
+.item image{
+  width: 100%;
+  height: 60rpx;
+  margin-top: 10rpx;
+}
+.item .icontxt{
+  margin-top: 300rpx;
+} */

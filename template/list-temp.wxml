@@ -1,0 +1,6 @@
+<template name="listtemp">
+   <view class="item">
+     <image src="{{item.imgsrc}}"></image>
+     <text class="icontxt">{{item.classname}}</text>
+   </view>
+</template>

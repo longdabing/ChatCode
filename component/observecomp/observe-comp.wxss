@@ -1,0 +1,6 @@
+/* component/observecomp/observe-comp.wxss */
+.box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

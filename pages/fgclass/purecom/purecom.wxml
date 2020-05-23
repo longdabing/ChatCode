@@ -1,0 +1,9 @@
+
+<wxs src="../../wxsfile/demo.wxs" module="mymoule"></wxs>
+<view>{{mymoule.showtxt}}</view>
+<view>{{mymoule.addnum(5,5)}}</view>
+<!-- <navigator url="/pages/fgclass/meateclass/meateclass.wxml">
+热门推荐页面跳到肉类页面</navigator>
+<navigator url="/pages/fgclass/meateclass/meateclass?param=longdb">
+热门推荐页面跳转传参数</navigator>
+<button type="primary" bindtap="bindNavigateto">api跳转页面</button> -->

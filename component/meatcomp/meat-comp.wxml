@@ -1,0 +1,10 @@
+<view class="container">
+	<view class="box">
+		<block wx:for="{{classimglist}}" wx:for-item="item" wx:key="listkey">
+			<view class="item">
+				<image bindtap="priviewImage" src="{{item.imgsrc}}"></image>
+				<text class="icontxt">{{item.classname}}</text>
+			</view>
+		</block>
+	</view>
+</view>

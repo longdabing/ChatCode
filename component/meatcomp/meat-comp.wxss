@@ -1,0 +1,18 @@
+.container .box{
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+}
+.item{
+  text-align: center;
+  margin-top: 20rpx;
+  left: 0rpx;
+}
+.item image{
+  width: 580rpx;
+  height: 250rpx;
+  margin-top: 10rpx;
+}
+.item .icontxt{
+  margin-top: 300rpx;
+}
