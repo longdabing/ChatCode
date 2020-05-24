@@ -22,9 +22,9 @@ ready:function(){
   // wx.showToast({
   //   title: "222",
   // })
-  wx.showToast({
-    title: temp.properties.dataIndex,
-  })
+  // wx.showToast({
+  //   title: temp.properties.dataIndex,
+  // })
 },
   /**
    * 组件的初始数据
