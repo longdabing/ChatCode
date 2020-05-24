@@ -12,10 +12,10 @@ Component({
    */
   data: {
     classimglist:[
-      {imgsrc:"/images/veg01.png",classname:"蔬菜01"},
+      {imgsrc:"/images/veg01.jpg",classname:"蔬菜01"},
       {imgsrc:"/images/veg02.jpg",classname:"蔬菜02"},
       {imgsrc:"/images/veg03.jpg",classname:"蔬菜03"},
-      {imgsrc:"/images/veg04.jpg",classname:"蔬菜04"},
+      {imgsrc:"/images/veg03.jpg",classname:"蔬菜04"},
   ]
   },
 

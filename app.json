@@ -1,14 +1,11 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
     "pages/person/person",
     "pages/fgood/fgood",
-    "pages/fgclass/fgclass",
-    "pages/fgclass/meateclass/meateclass",
-    "pages/fgclass/seaclass/seaclass",
-    "pages/fgclass/purecom/purecom"
+    "pages/fgclass/fgclass"
   ],
+
   "tabBar": {
     "color": "#333",
     "selectedColor": "#008888",

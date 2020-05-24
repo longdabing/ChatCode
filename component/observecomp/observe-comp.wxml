@@ -1,7 +1,0 @@
-<!--component/observecomp/observe-comp.wxml-->
-<view class="box">
-<view>{{sumvalue}}</view>
-<view>
-<button type="primary" bindtap="bindsum">求和</button>
-</view>
-</view>

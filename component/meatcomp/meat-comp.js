@@ -73,6 +73,13 @@ Component({
           console.log("failed",res);
         }
       })
-    }
+    },
+     /**右侧内容滚动，联动左侧导航栏滚动**/
+  scrolltolower: () => {
+    console.log("22266");
+  },
+  vscroll:(e)=>{
+    console.log(e);
+  },
   }
 })

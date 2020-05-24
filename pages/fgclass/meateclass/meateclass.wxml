@@ -1,5 +1,0 @@
-<!--pages/fgclass/meateclass/meateclass.wxml-->
-<view>肉类页面,列表是组件生成的</view>
-<view>{{meateparater}}</view>
-
-<list-comp></list-comp>

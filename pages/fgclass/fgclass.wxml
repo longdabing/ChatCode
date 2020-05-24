@@ -20,12 +20,20 @@
 	</scroll-view>
 	<!-- </view> -->
 	<!-- <view class="rightbox"> -->
-	<scroll-view scroll-y="true" class="right">
-		<list-comp wx:if="{{currnavindex==0? true:false}}"></list-comp>
-		<meat-comp wx:if="{{currnavindex==1? true:false}}"></meat-comp>
-		<sea-comp wx:if="{{currnavindex==2? true:false}}"></sea-comp>
-		<veg-comp wx:if="{{currnavindex==3? true:false}}"></veg-comp>
-		<fruit-comp wx:if="{{currnavindex==4? true:false}}"></fruit-comp>
-		<bever-comp wx:if="{{currnavindex==5? true:false}}"></bever-comp>
+	<scroll-view scroll-y="true" class="right" lower-threshold="1" 
+	upper-threshold="1"
+	refresher-enabled="true"
+	refresher-background="#bed742" bindrefresherpulling="refresherpulling" bindscroll="vscroll" 
+	bindscrolltoupper="scrolltoupper"
+	bindscrolltolower="scrolltolower">
+		<view style="height:100%;width:100%;padding-bottom: 20vw">
+			<list-comp wx:if="{{currnavindex==0? true:false}}"></list-comp>
+			<meat-comp wx:if="{{currnavindex==1? true:false}}"></meat-comp>
+			<sea-comp wx:if="{{currnavindex==2? true:false}}"></sea-comp>
+			<veg-comp wx:if="{{currnavindex==3? true:false}}"></veg-comp>
+			<fruit-comp wx:if="{{currnavindex==4? true:false}}"></fruit-comp>
+			<bever-comp wx:if="{{currnavindex==5? true:false}}"></bever-comp>
+		</view>
+
 	</scroll-view>
 </view>

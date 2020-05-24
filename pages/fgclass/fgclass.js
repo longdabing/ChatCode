@@ -5,45 +5,115 @@ Page({
    * 页面的初始数据
    */
   data: {
-    ishidden:false,
-    showtxt:"我是 只说代码的大饼",
-    currnavindex:0,
-    rightitemindex:0,
-    imgonesrc:"/images/xiaochengxu03.png",
-    imgtwosrc:"/images/xiaochengxu01.png",
-    txtclasslist:[
-    {txt:"热门推荐",url:"/pages/fgclass/purecom/purecom"},
-    {txt:"肉类",url:"/pages/fgclass/meateclass/meateclass"},
-    {txt:"海鲜",url:"/pages/fgclass/seaclass/seaclass"},
-    {txt:"蔬菜",url:"/pages/fgclass/meateclass/meateclass"},
-    {txt:"水果",url:"/pages/fgclass/meateclass/meateclass"},
-    {txt:"饮料",url:"/pages/fgclass/meateclass/meateclass"}],
+    ishidden: false,
+    showtxt: "我是 只说代码的大饼",
+    currnavindex: 0,
+    rightitemindex: 0,
+    imgonesrc: "/images/xiaochengxu03.png",
+    imgtwosrc: "/images/xiaochengxu01.png",
+    txtclasslist: [{
+        txt: "热门推荐",
+        url: "/pages/fgclass/purecom/purecom"
+      },
+      {
+        txt: "肉类",
+        url: "/pages/fgclass/meateclass/meateclass"
+      },
+      {
+        txt: "海鲜",
+        url: "/pages/fgclass/seaclass/seaclass"
+      },
+      {
+        txt: "蔬菜",
+        url: "/pages/fgclass/meateclass/meateclass"
+      },
+      {
+        txt: "水果",
+        url: "/pages/fgclass/meateclass/meateclass"
+      },
+      {
+        txt: "饮料",
+        url: "/pages/fgclass/meateclass/meateclass"
+      }
+    ],
 
-    rightcomplist: [{compname:"热门推荐",url:"/pages/fgclass/purecom/purecom"},
-    {compname:"肉类",url:"/pages/fgclass/meateclass/meateclass"},
-    {compname:"海鲜",url:"/pages/fgclass/seaclass/seaclass"},
-    {compname:"蔬菜",url:"/pages/fgclass/meateclass/meateclass"},
-    {compname:"水果",url:"/pages/fgclass/meateclass/meateclass"},
-    {compname:"饮料",url:"/pages/fgclass/meateclass/meateclass"}],
+    rightcomplist: [{
+        compname: "热门推荐",
+        url: "/pages/fgclass/purecom/purecom"
+      },
+      {
+        compname: "肉类",
+        url: "/pages/fgclass/meateclass/meateclass"
+      },
+      {
+        compname: "海鲜",
+        url: "/pages/fgclass/seaclass/seaclass"
+      },
+      {
+        compname: "蔬菜",
+        url: "/pages/fgclass/meateclass/meateclass"
+      },
+      {
+        compname: "水果",
+        url: "/pages/fgclass/meateclass/meateclass"
+      },
+      {
+        compname: "饮料",
+        url: "/pages/fgclass/meateclass/meateclass"
+      }
+    ],
   },
-  bindchangeimg:function(){
+  bindchangeimg: function () {
     this.setData({
-      imgonesrc:"/images/xiaochengxu01.png"
+      imgonesrc: "/images/xiaochengxu01.png"
     })
   },
   /**左侧菜单点击事件**/
-  leftcatchtap:function(e){
+  leftcatchtap: function (e) {
     console.log(e.currentTarget.dataset.curritem);
-    this.setData({currnavindex:e.currentTarget.dataset.curritem});
-    if(this.data.ishidden===true){
+    this.setData({
+      currnavindex: e.currentTarget.dataset.curritem
+    });
+    if (this.data.ishidden === true) {
       this.setData({
-        ishidden:false
+        ishidden: false
       })
-    }else{
+    } else {
       this.setData({
-        ishidden:true
+        ishidden: true
       })
     }
+  },
+  /**右侧内容滚动，联动左侧导航栏滚动**/
+  scrolltoupper:()=>{
+    wx.showToast({
+      title: '滚动到顶部',
+    });
+  },
+  scrolltolower: () => {
+    console.log("222");
+    wx.showToast({
+      title: '滚动到底部',
+    });
+    this.setData({
+      currnavindex:4
+    })
+    wx.showModal({
+      title:'底部',
+      content:"22"
+    })
+  },
+  vscroll:(e)=>{
+    console.log(e);
+    wx.showToast({
+      title: '滚动',
+    })
+  },
+  refresherpulling:(e)=>{
+    console.log(e.detail);
+    wx.showToast({
+      title: '下来刷新'+e.detail,
+    })
   },
   /**
    * 生命周期函数--监听页面加载

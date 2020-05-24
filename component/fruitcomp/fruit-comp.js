@@ -12,7 +12,7 @@ Component({
    */
   data: {
     classimglist: [{
-        imgsrc: "/images/fruit01.png",
+        imgsrc: "/images/fruit01.jpg",
         classname: "水果01"
       },
       {
@@ -28,7 +28,7 @@ Component({
         classname: "水果04"
       },
       {
-        imgsrc: "/images/fruit01.png",
+        imgsrc: "/images/fruit01.jpg",
         classname: "水果05"
       },
       {
