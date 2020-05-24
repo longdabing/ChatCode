@@ -1,12 +1,3 @@
-<!--pages/fgclass/fgclass.wxml-->
-<!-- <video class="videoss" src="http://localhost/webapp/HD釜山行.mp4" controls danmu-btn="true" show-center-play-btn="true" initial-time="100">
-	<cover-view>
-		<cover-image class="coverimg" src="{{imgonesrc}}"></cover-image>
-	</cover-view>
-</video> -->
-<!-- <view>
-	<button type="primary" bindtap="bindchangeimg">修改左上角图片</button>
-</view> -->
 <view class="box">
 	<!-- <view class="scrollbox"> -->
 	<scroll-view scroll-y="true" class="left">
@@ -14,21 +5,20 @@
 			<view class="itemview {{currnavindex==index?'active':''}}" data-curritem="{{index}}" catchtap="leftcatchtap">
 				<!-- <navigator url="{{item.url}}">{{item.txt}}</navigator> -->
 				<view>{{item.txt}}</view>
-
 			</view>
 		</block>
 	</scroll-view>
-	<!-- </view> -->
-	<!-- <view class="rightbox"> -->
-	<scroll-view scroll-y="true" class="right" lower-threshold="1" 
+
+	<scroll-view data-sindex="{{currnavindex}}" scroll-y="true" class="right" 
+	lower-threshold="1" 
 	upper-threshold="1"
 	refresher-enabled="true"
-	refresher-background="#bed742" bindrefresherpulling="refresherpulling" bindscroll="vscroll" 
+	refresher-background="#bed742" bindrefresherpulling="refresherpulling" 
 	bindscrolltoupper="scrolltoupper"
 	bindscrolltolower="scrolltolower">
-		<view style="height:100%;width:100%;padding-bottom: 20vw">
+		<view style="height:100%;width:100%;">
 			<list-comp wx:if="{{currnavindex==0? true:false}}"></list-comp>
-			<meat-comp wx:if="{{currnavindex==1? true:false}}"></meat-comp>
+			<meat-comp dataIndex="{{currnavindex}}" wx:if="{{currnavindex==1? true:false}}"></meat-comp>
 			<sea-comp wx:if="{{currnavindex==2? true:false}}"></sea-comp>
 			<veg-comp wx:if="{{currnavindex==3? true:false}}"></veg-comp>
 			<fruit-comp wx:if="{{currnavindex==4? true:false}}"></fruit-comp>

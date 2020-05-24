@@ -85,35 +85,79 @@ Page({
     }
   },
   /**右侧内容滚动，联动左侧导航栏滚动**/
-  scrolltoupper:()=>{
+  scrolltoupper: function (e) {
+    // wx.showToast({
+    //   title: '滚动到顶部',
+    // });
+    var that = this;
+    if(thi.data.currnavindex==5){
+      this.setData({
+        currnavindex: 4
+      })
+    }
+   else if(thi.data.currnavindex==4){
+      this.setData({
+        currnavindex: 3
+      })
+    }
+    else if(thi.data.currnavindex==3){
+      this.setData({
+        currnavindex: 2
+      })
+    }
+    else if(thi.data.currnavindex==2){
+      this.setData({
+        currnavindex: 1
+      })
+    }
+    else{
+      this.setData({
+        currnavindex: 0
+      })
+    }
+  },
+  scrolltolower: function (e) {
+    var that = this;
+    if (this.data.currnavindex == 0) {
+      that.setData({
+        currnavindex: 1
+      })
+    } else if (this.data.currnavindex == 1) {
+      that.setData({
+        currnavindex: 2
+      })
+    } else if (this.data.currnavindex == 2) {
+      that.setData({
+        currnavindex: 3
+      })
+    } else if (this.data.currnavindex == 3) {
+      that.setData({
+        currnavindex: 4
+      })
+    } else if (this.data.currnavindex == 4) {
+      that.setData({
+        currnavindex: 5
+      })
+    } else if (this.data.currnavindex == 5) {
+      that.setData({
+        currnavindex: 0
+      })
+    }
     wx.showToast({
-      title: '滚动到顶部',
+      title: '滚动到底部' + this.data.currnavindex,
     });
   },
-  scrolltolower: () => {
-    console.log("222");
-    wx.showToast({
-      title: '滚动到底部',
-    });
-    this.setData({
-      currnavindex:4
-    })
-    wx.showModal({
-      title:'底部',
-      content:"22"
-    })
-  },
-  vscroll:(e)=>{
+  vscroll: function (e) {
     console.log(e);
     wx.showToast({
       title: '滚动',
     })
   },
-  refresherpulling:(e)=>{
+  refresherpulling: function (e) {
     console.log(e.detail);
-    wx.showToast({
-      title: '下来刷新'+e.detail,
-    })
+    // wx.showToast({
+    //   title: '下来刷新'+e.detail,
+    // })
   },
   /**
    * 生命周期函数--监听页面加载

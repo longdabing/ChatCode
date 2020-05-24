@@ -6,9 +6,26 @@ Component({
     hidden: {
       type: Boolean,
       value: true
+    },
+    dataIndex:{
+      type:String
     }
   },
-
+observers:{
+  "dataIndex":function(dataIndex){
+    console.log(dataIndex);
+  }
+},
+ready:function(){
+  var temp = this;
+  console.log(this.properties.dataIndex);
+  // wx.showToast({
+  //   title: "222",
+  // })
+  wx.showToast({
+    title: temp.properties.dataIndex,
+  })
+},
   /**
    * 组件的初始数据
    */
@@ -75,11 +92,22 @@ Component({
       })
     },
      /**右侧内容滚动，联动左侧导航栏滚动**/
+     scrolltoupper:()=>{
+      wx.showToast({
+        title: '滚动到顶部',
+      });
+    },
   scrolltolower: () => {
     console.log("22266");
   },
   vscroll:(e)=>{
     console.log(e);
   },
-  }
+  },
+  refresherpulling:(e)=>{
+    console.log(e.detail);
+    wx.showToast({
+      title: '下来刷新'+e.detail,
+    })
+  },
 })
