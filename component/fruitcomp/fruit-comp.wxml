@@ -2,18 +2,17 @@
 	<view class="box">
 		<block wx:for="{{classimglist}}" wx:for-item="item" wx:key="listkey">
 			<view class="item">
-			<view class="img-txt">
-						 <image src="{{item.imgsrc}}"></image>
-				<view class="icontxt">{{item.classname}}</view>
-			</view>
-
+				<view class="img-txt">
+					<image src="{{item.imgsrc}}"></image>
+					<view class="icontxt">{{item.classname}}</view>
+				</view>
 
 				<view class="info">
 					<text class="price">¥{{item.price}}</text>
 					<view class="add">+</view>
 				</view>
 			</view>
-					<view class="splitline"></view>
+			<view class="splitline"></view>
 		</block>
 	</view>
 </view>
