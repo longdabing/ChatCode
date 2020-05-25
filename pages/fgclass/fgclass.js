@@ -86,35 +86,33 @@ Page({
   },
   /**右侧内容滚动，联动左侧导航栏滚动**/
   scrolltoupper: function (e) {
-    // wx.showToast({
-    //   title: '滚动到顶部',
-    // });
-    var that = this;
-    if(thi.data.currnavindex==5){
-      this.setData({
-        currnavindex: 4
-      })
-    }
-   else if(thi.data.currnavindex==4){
-      this.setData({
-        currnavindex: 3
-      })
-    }
-    else if(thi.data.currnavindex==3){
-      this.setData({
-        currnavindex: 2
-      })
-    }
-    else if(thi.data.currnavindex==2){
-      this.setData({
-        currnavindex: 1
-      })
-    }
-    else{
-      this.setData({
-        currnavindex: 0
-      })
-    }
+  
+  //   var that = this;
+  //   if(this.data.currnavindex==5){
+  //     this.setData({
+  //       currnavindex: 4
+  //     })
+  //   }
+  //  else if(this.data.currnavindex==4){
+  //     this.setData({
+  //       currnavindex: 3
+  //     })
+  //   }
+  //   else if(this.data.currnavindex==3){
+  //     this.setData({
+  //       currnavindex: 2
+  //     })
+  //   }
+  //   else if(this.data.currnavindex==2){
+  //     this.setData({
+  //       currnavindex: 1
+  //     })
+  //   }
+  //   else{
+  //     this.setData({
+  //       currnavindex: 0
+  //     })
+  //   }
   },
   scrolltolower: function (e) {
     var that = this;

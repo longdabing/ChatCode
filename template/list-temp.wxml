@@ -3,4 +3,7 @@
      <image src="{{item.imgsrc}}"></image>
      <text class="icontxt">{{item.classname}}</text>
    </view>
+   <view class="info">
+   
+   </view>
 </template>

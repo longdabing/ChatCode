@@ -4,7 +4,7 @@
 		<block wx:for="{{txtclasslist}}" wx:for-item="item" wx:key="index">
 			<view class="itemview {{currnavindex==index?'active':''}}" data-curritem="{{index}}" catchtap="leftcatchtap">
 				<!-- <navigator url="{{item.url}}">{{item.txt}}</navigator> -->
-				<view>{{item.txt}}</view>
+				<view class="leftname {{currnavindex==index?'nameactive':''}}">{{item.txt}}</view>
 			</view>
 		</block>
 	</scroll-view>

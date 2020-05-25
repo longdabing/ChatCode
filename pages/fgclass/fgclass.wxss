@@ -1,11 +1,7 @@
 /* pages/fgclass/fgclass.wxss */
-.videoss {
-  width: 100%;
-}
-
-.coverimg {
-  width: 200rpx;
-  height: 100rpx;
+page{
+  min-height: 100%;
+  background-color: #F2f2f2;
 }
 
 .scrolly {
@@ -19,9 +15,16 @@
   width: 140rpx;
   margin-top: 30rpx;
   margin-left: 0rpx;
-  background-color: #99CC33;
+  /* background-color: #99CC33; */
 }
-
+.itemview .leftname{
+  display: inline-block;
+  font-size: 28rpx;
+  color: #646464;
+  line-height: 1.2;
+  text-align: left;
+  pointer-events: none;
+}
 /* .box{
   display: flex;
 }
@@ -47,8 +50,14 @@
   height: 100%;
   overflow: hidden;
 }
+.itemview .nameactive{
+  color: #d81e06;
+  font-weight: bold;
+}
 .box .active{
-  background-color: #77ac98;
+  color: #d81e06;
+  font-weight: bold;
+  border-left: 4rpx solid #d81e06;
 }
 
 .left {
@@ -57,7 +66,7 @@
   top: 0;
   height: 100%;
   width: 145rpx;
-  background:#feeeed;/* #F6F6F6; */
+  /* background:#feeeed; */
   text-align: center;
   font-size: 28rpx;
 }
