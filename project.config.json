@@ -53,6 +53,13 @@
 					"id": -1,
 					"name": "pages/fgclass/fgclass",
 					"pathName": "pages/fgclass/fgclass",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/fgood/fgood",
+					"pathName": "pages/fgood/fgood",
 					"scene": null
 				}
 			]

@@ -1,2 +1,26 @@
-<!--pages/fgood/fgood.wxml-->
-<text>购物车</text>
+<view class="container">
+	<block wx:for="{{classimglist}}">
+		<view class="item">
+			<checkbox class="check"></checkbox>
+			<image src="{{item.imgsrc}}"></image>
+			<view class="leftitem">
+				<text class="itemname">{{item.classname}}</text>
+				<view class="leftbottom">
+					<text class="amount">¥{{item.price}}</text>
+					<view class="bottomadd">
+          <view class="addleft">-</view>
+          <text class="fgcount">{{fgcount}}</text>
+          <view class="addright">+</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</block>
+	<view class="settlebottmom">
+		<checkbox class="check">全选</checkbox>
+		<view class="bottmomright">
+			<view>合计:<text class="amount">¥{{sumamount}}</text></view>
+			<view class="calc">结  算</view>
+		</view>
+	</view>
+</view>

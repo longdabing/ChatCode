@@ -1,1 +1,105 @@
-/* pages/fgood/fgood.wxss */
+page {
+  background-color: #f6f5ec;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+}
+
+.container .item {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin: 20rpx 20rpx;
+  border-radius: 20rpx;
+  background-color: white;
+}
+
+.item image {
+  width: 160rpx;
+  height: 160rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.leftitem .itemname {
+  margin-left: 20rpx;
+}
+
+.item .leftbottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+
+.leftbottom .bottomadd {
+  display: flex;
+
+  margin-left: 250rpx;
+}
+
+.bottomadd .addleft {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 10rpx;
+  background-color: #426ab3;
+  line-height: 50rpx;
+  text-align: center;
+  margin-right: 50rpx;
+  color: white;
+}
+
+.bottomadd .addright {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 10rpx;
+  background-color: #426ab3;
+  line-height: 50rpx;
+  text-align: center;
+  margin-right: 50rpx;
+  color: white;
+}
+
+.bottomadd .fgcount {
+  text-align: center;
+  margin-right: 33rpx;
+
+}
+
+.container .settlebottmom {
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: #fffef9;
+  width: 100%;
+}
+
+.container .settlebottmom .check {
+  margin-left: 20rpx;
+}
+
+.settlebottmom {
+  display: flex;
+}
+
+.settlebottmom .bottmomright {
+  display: flex;
+  /* margin-left: 10rpx; */
+  justify-content: space-between;
+}
+
+.bottmomright .calc {
+  background-color: #ed1941;
+  border-radius: 10rpx;
+  color: white;
+  font-weight: bold;
+  margin-left: 30rpx;
+  margin-right: 60rpx;
+}
+.amount{
+  color: #ed1941;
+}
