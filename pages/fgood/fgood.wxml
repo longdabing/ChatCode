@@ -1,26 +1,31 @@
 <view class="container">
-	<block wx:for="{{classimglist}}">
+	<block wx:for="{{classimglist}}" wx:key="index">
 		<view class="item">
-			<checkbox class="check"></checkbox>
+			<checkbox-group data-checkindex="{{index}}" bindchange="leftchage">
+				<checkbox class="check" checked="{{item.checkvalue}}"  value="{{index}}"></checkbox>
+			</checkbox-group>
+
 			<image src="{{item.imgsrc}}"></image>
 			<view class="leftitem">
 				<text class="itemname">{{item.classname}}</text>
 				<view class="leftbottom">
 					<text class="amount">¥{{item.price}}</text>
 					<view class="bottomadd">
-          <view class="addleft">-</view>
-          <text class="fgcount">{{fgcount}}</text>
-          <view class="addright">+</view>
+						<view class="addleft">-</view>
+						<text class="fgcount">{{fgcount}}</text>
+						<view class="addright">+</view>
 					</view>
 				</view>
 			</view>
 		</view>
 	</block>
 	<view class="settlebottmom">
-		<checkbox class="check">全选</checkbox>
+	<checkbox-group bindchange="allcheckchange">
+			<checkbox class="check" value="{{allcheckvalue}}" checked="{{allcheckvalue}}">全选</checkbox>
+	</checkbox-group>
 		<view class="bottmomright">
 			<view>合计:<text class="amount">¥{{sumamount}}</text></view>
-			<view class="calc">结  算</view>
+			<view class="calc">结 算</view>
 		</view>
 	</view>
 </view>
