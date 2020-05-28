@@ -1,4 +1,23 @@
 /* pages/person/person.wxss */
+.imgbox{
+  display: flex;
+flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 300rpx;
+  background-color: #a3cf62;
+}
+.imgbox image{
+  width: 300rpx;
+  height: 300rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 50%;
+}
+.imgbox  .name{
+  margin-bottom: 20rpx;
+}
 .flex-box{
   display: flex;
   flex-flow: column;

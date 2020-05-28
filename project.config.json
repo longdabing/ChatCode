@@ -60,6 +60,13 @@
 					"id": -1,
 					"name": "pages/fgood/fgood",
 					"pathName": "pages/fgood/fgood",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/person/person",
+					"pathName": "pages/person/person",
 					"scene": null
 				}
 			]

@@ -1,26 +1,26 @@
 <!--pages/person/person.wxml-->
 <view>
-   <view class="flex-box">
-   <view class="txt">
-       <text>个人信息</text>
-   </view>
-   <view class="splitline"></view>
-   <view class="txt">
-        <text>位置:{{hlocaltion}}</text>
-   </view>
-      <view class="splitline"></view>
-      <view class="txt">
-        <text>姓名:{{hname}}</text>
-      </view>
-         <view class="splitline"></view>
-    <view class="txt">
-     <text>性别:{{hsex}}</text>
-    </view>
-       <view class="splitline"></view>
-       <view class="txt">
-         <text>年龄:{{hage}}</text>
-       </view>
-    <view class="splitline"></view>
-   </view>
-       <button class="btn" type="primary">退出登录</button>
+	<view class="imgbox">
+		<button type="primary" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">微信登录</button>
+		<block wx:else>
+			<image src="{{userInfo.avatarUrl}}"></image>
+			<text class="name">{{userInfo.nickName}}</text>
+		</block>
+	</view>
+	<view class="flex-box">
+		<view class="splitline"></view>
+		<view class="txt">
+			<text>位置:{{userInfo.city}}</text>
+		</view>
+		<view class="splitline"></view>
+		<view class="txt">
+			<text>性别:{{userInfo.gender===0?"女":"男"}}</text>
+		</view>
+		<view class="splitline"></view>
+		<view class="txt">
+			<text>年龄:{{hage}}</text>
+		</view>
+		<view class="splitline"></view>
+	</view>
+	<button class="btn" type="primary">退出登录</button>
 </view>
