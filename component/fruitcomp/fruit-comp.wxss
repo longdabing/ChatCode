@@ -1,37 +1,38 @@
 .container .box{
   display: flex;
-  flex-flow: column;
-  /* flex-wrap: wrap; */
+  /* flex-flow: column; */
   justify-content: space-around;
+ flex-direction: column;
 }
 .item{
   text-align: center;
   margin-top: 20rpx;
   /* border-bottom: 1rpx solid #d81e06; */
 }
-
+.item .item-right{
+  display: flex;
+  flex-flow: column;
+}
+.item-right .info{
+  display: flex;
+  justify-content: space-between;
+  margin-top:30rpx;
+}
 .item image{
   float:left;
   width: 140rpx;
   height: 140rpx;
-  /* margin-top: 10rpx; */
   border-radius: 6rpx;
   margin-left: 20rpx;
 }
 
-
 .item .icontxt{
   font-size: 28rpx;
   color: #646464;
-  line-height: 1.2;
   text-align: left;
-  float: left;
+  margin-top: 10rpx;
 }
-.item .info{
-  display: flex;
-  justify-content: space-between;
-  margin-top:60rpx;
-}
+
 .item .info .price{
   color: red;
 }

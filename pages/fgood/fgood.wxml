@@ -11,9 +11,9 @@
 				<view class="leftbottom">
 					<text class="amount">¥{{item.price}}</text>
 					<view class="bottomadd">
-						<view class="addleft">-</view>
-						<text class="fgcount">{{fgcount}}</text>
-						<view class="addright">+</view>
+						<view class="addleft" data-subindex="{{index}}" bindtap="bindsub">-</view>
+						<text class="fgcount">{{item.fgcount}}</text>
+						<view class="addright" data-addindex="{{index}}" bindtap="bindadd">+</view>
 					</view>
 				</view>
 			</view>

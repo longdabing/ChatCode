@@ -4,13 +4,16 @@
 			<view class="item">
 				<view class="img-txt">
 					<image src="{{item.imgsrc}}"></image>
+
+				</view>
+				<view class="item-right">
 					<view class="icontxt">{{item.classname}}</view>
+					<view class="info">
+						<text class="price">¥{{item.price}}</text>
+						<view class="add">+</view>
+					</view>
 				</view>
 
-				<view class="info">
-					<text class="price">¥{{item.price}}</text>
-					<view class="add">+</view>
-				</view>
 			</view>
 			<view class="splitline"></view>
 		</block>
