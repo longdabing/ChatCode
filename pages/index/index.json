@@ -1,7 +1,8 @@
 {
   "usingComponents": {
     "scroll-comp":"../../component/scrollcomp/scroll-comp",
-    "search-comp":"../../component/searchcomp/search-comp"
+    "search-comp":"../../component/searchcomp/search-comp",
+    "search-wi":"../../weui/searchbar/searchbar"
   },
   "navigationBarBackgroundColor": "#99CC33",
   "navigationBarTitleText": "首页"
