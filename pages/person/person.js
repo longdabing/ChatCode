@@ -1,4 +1,6 @@
 // pages/personal/personal.js
+// var utils = require("../../utils/util.js")
+// var wsocket = require("../../utils/socket.js");
 let app = getApp();
 Page({
   /**
@@ -8,13 +10,64 @@ Page({
     hage: 18,
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    wscoket:WebSocket,
+    msg:'小程序'
   },
 
+  opensocket:function(){
+     this.data.wscoket = wx.connectSocket({
+      url: 'ws://localhost:50596/api/WSocket?fname=longdb',
+    });
+    this.data.wscoket.onOpen(res=>{
+      console.log("连接成功！");
+    });
+
+    this.data.wscoket.onMessage(res=>{
+      console.log(res,222);
+      this.setData({
+        msg:res.data
+      })
+    })
+    this.data.wscoket.onClose(()=>{
+      console.log("close");
+    })
+  },
+  onmessage:function(res){
+    this.setData({
+      msg:res.Data
+    });
+    alert(res.Data)
+  },
+//发送内容
+senddata: function () {
+  if (this.data.wscoket.readyState == this.data.wscoket.OPEN) {
+    this.data.wscoket.send({
+      data: (JSON.stringify({
+        RoomId:'1001',
+            DataType: 0,
+            SendType: 1,
+            Data: '小程序发送的内容',
+            SenderName:'小程序'
+        })),
+      success: () => {
+        console.info('客户端发送成功');
+      }
+    });
+  } else {
+    console.error('连接已经关闭');
+  }
+},
+//关闭连接
+closesocket: function () {
+  wscoket.close();
+},
+    
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // console.log(utils.formatTime(new Date()));
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

@@ -34,7 +34,12 @@ flex-flow: column;
   margin-right: 4%;
   background-color: wheat;
 }
+.btngroup{
+  display: flex;
+  flex-wrap: wrap;
+}
 .btn{
   margin-top: 10rpx;
+  margin-left: 10rpx;
   width: 100%;
 }

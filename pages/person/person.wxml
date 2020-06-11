@@ -22,5 +22,14 @@
 		</view>
 		<view class="splitline"></view>
 	</view>
-	<button class="btn" type="primary">退出登录</button>
+	<view class="btngroup">
+		<button class="btn" type="primary">退出登录</button>
+		<button class="btn" type="primary" bindtap="opensocket">连接websocket</button>
+		<button class="btn" type="primary" bindtap="senddata">发送数据</button>
+		<button class="btn" type="primary" bindtap="closesocket">关闭</button>
+	</view>
+
+	<view class="msgcontainer">
+		{{msg}}
+	</view>
 </view>
