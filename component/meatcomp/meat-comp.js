@@ -39,7 +39,7 @@ ready:function(){
         classname: "五花肉块"
       },
       {
-        imgsrc: "/images/meate03.jpg",
+        imgsrc: "/images/meate03.png",
         classname: "五花肉"
       },
       {
