@@ -32,43 +32,48 @@ ready:function(){
   data: {
     classimglist: [{
         imgsrc: "/images/meate01.jpg",
-        classname: "五花肉片"
+        classname: "五花肉片",
+        price:12
       },
       {
         imgsrc: "/images/meate02.jpg",
-        classname: "五花肉块"
+        classname: "五花肉块",
+        price:12
       },
       {
         imgsrc: "/images/meate03.png",
-        classname: "五花肉"
+        classname: "五花肉",
+        price:12
       },
       {
         imgsrc: "/images/meate04.jpg",
-        classname: "猪耳朵"
+        classname: "猪耳朵",
+        price:12
       },
       {
         imgsrc: "/images/tohome.png",
-        classname: "京东到家"
+        classname: "京东到家",
+        price:12
       },
       {
         imgsrc: "/images/market.png",
-        classname: "充值缴费"
+        classname: "充值缴费",
+        price:12
       },
       {
         imgsrc: "/images/electrica.png",
-        classname: "9.9元拼"
+        classname: "9.9元拼",
+        price:12
       },
       {
         imgsrc: "/images/dress.png",
-        classname: "京东领券"
+        classname: "京东领券",
+        price:12
       },
       {
         imgsrc: "/images/fresh.png",
-        classname: "京东赚钱"
-      },
-      {
-        imgsrc: "/images/tohome.png",
-        classname: "Plus会员"
+        classname: "京东赚钱",
+        price:12
       },
     ]
   },

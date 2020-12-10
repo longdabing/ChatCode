@@ -4,7 +4,6 @@
 			<view class="item">
 				<view class="img-txt">
 					<image src="{{item.imgsrc}}"></image>
-
 				</view>
 				<view class="item-right">
 					<view class="icontxt">{{item.classname}}</view>

@@ -1,9 +1,15 @@
 <template name="listtemp">
-   <view class="item">
-     <image src="{{item.imgsrc}}"></image>
-     <text class="icontxt">{{item.classname}}</text>
-   </view>
-   <view class="info">
-   
-   </view>
+   		<view class="item">
+				<view class="img-txt">
+					<image bindtap="priviewImage" src="{{item.imgsrc}}"></image>
+				</view>
+				<view class="item-right">
+					<view class="icontxt">{{item.classname}}</view>
+					<view class="info">
+						<text class="price">¥{{item.price}}</text>
+						<view class="add">+</view>
+					</view>
+				</view>
+			</view>
+			<view class="splitline"></view>
 </template>

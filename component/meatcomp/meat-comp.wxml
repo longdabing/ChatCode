@@ -2,25 +2,19 @@
 	<view class="box">
 		<block wx:for="{{classimglist}}" wx:for-item="item" wx:key="listkey">
 			<view class="item">
-				<image bindtap="priviewImage" src="{{item.imgsrc}}"></image>
-				<text class="icontxt">{{item.classname}}</text>
+				<view class="img-txt">
+					<image bindtap="priviewImage" src="{{item.imgsrc}}"></image>
+				</view>
+				<view class="item-right">
+					<view class="icontxt">{{item.classname}}</view>
+					<view class="info">
+						<text class="price">¥{{item.price}}</text>
+						<view class="add">+</view>
+					</view>
+				</view>
+
 			</view>
+			<view class="splitline"></view>
 		</block>
 	</view>
 </view>
-	<!-- <scroll-view scroll-y="true" class="container"
-	lower-threshold="1" 
-	upper-threshold="1"
-	refresher-enabled="true"
-	refresher-background="#bed742" bindrefresherpulling="refresherpulling" 
-	bindscrolltoupper="scrolltoupper"
-	bindscrolltolower="scrolltolower">
-	<view style="height:100%;width:100%;">
-		<block wx:for="{{classimglist}}" wx:for-item="item" wx:key="listkey">
-			<view class="item">
-				<image bindtap="priviewImage" src="{{item.imgsrc}}"></image>
-				<text class="icontxt">{{item.classname}}</text>
-			</view>
-		</block>
-	</view>
-	</scroll-view> -->

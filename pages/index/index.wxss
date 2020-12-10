@@ -24,7 +24,7 @@
   color:blue;
 }
 /**引入另外的.wxss样式文件 2020.5.14**/
-@import "../../template/list-temp.wxss"
+@import "../../template/list-temp-index.wxss"
 /**原来的样式，2020.5.14 longdb**/
 /* .box .item{
   text-align: center;

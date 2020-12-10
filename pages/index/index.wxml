@@ -1,4 +1,4 @@
-<import src="../../template/list-temp.wxml" />
+<import src="../../template/list-temp-index.wxml" />
 <!-- <search-comp bindsearchtxt="searchtxt" searchcompdata="{{indexname}}" search-style="searchstyle" id="searchid"></search-comp> -->
 <search-wi></search-wi>
 <swiper class="swiper" autoplay="true" indicator-dots="true" indicator-color="red" interval="2000" circular="true">
