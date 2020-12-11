@@ -55,6 +55,12 @@ Page({
       url: '../logs/logs'
     })
   },
+   //事件处理函数,跳转到tabbar 中的分类页面。
+   bindswitchTab: function () {
+    wx.switchTab({
+      url: '../fgclass/fgclass'
+    })
+  },
   /**组件绑定的事件**/
   searchtxt: function (e) {
     //这里的e就是search-comp组件给页面的值。
